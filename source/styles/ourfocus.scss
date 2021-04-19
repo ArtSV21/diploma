@@ -1,0 +1,40 @@
+.ourfocus {
+    @include flex-row;
+    justify-content: center;
+    align-items: flex-start;
+        &-direction {
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.1px;
+            color: #20262A;
+            padding: 86px 111px 273px 0;
+        }
+        &-info {
+            width: 34%;
+            &__info {
+                padding: 80px 0 30px 0;
+                span-first {
+                    font-size: 19px;
+                    line-height: 30px;
+                    letter-spacing: 0.2px;
+                    color: #5C5C5C;
+                }
+                span-second {
+                    font-size: 19px;
+                    line-height: 30px;
+                    letter-spacing: 0.2px;
+                    color: #5C5C5C;
+                    }
+            }
+            &__button button {
+                background: #00B6F0;
+                border-radius: 85px;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+                padding: 16px 46px 16px 46px;
+                margin-bottom: 70px;
+            }
+        }
+}

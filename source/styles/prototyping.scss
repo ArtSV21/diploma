@@ -1,11 +1,13 @@
 .prototyping {
-    background-color: red;
     @include flex-column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    
+    margin: 0;
+    background-image: url(../img/confetti.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
         &-heading {
+            width: 60%;
             font-size: 72px;
             line-height: 78px;
             text-align: center;
@@ -13,22 +15,25 @@
             color: #112D57;
             font-style: normal;
             font-weight: 900;
-            padding: 200px 396px 37px 396px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 7.62%, rgba(0, 225, 198, 0.06) 25.5%, #FFFFFF 70.92%);
+            padding: 200px 0 37px 0;
+            
         }
         &-descr {
+            width: 45%;
             font-size: 24px;
             line-height: 38px;
             text-align: center;
             letter-spacing: 0.2px;
             color: #5C5C5C;
             font-style: normal;
+            padding: 37px 0 94px 0;
         }
         &-button {
             @include flex-row;
-            
-            &__start {
-                width: 192px;
+            margin-bottom: 45px;
+
+            &__start button {
+                width: 194px;
                 height: 52px;
                 background: #00B6F0;
                 border-radius: 85px;
@@ -39,8 +44,10 @@
                 line-height: 20px;
                 letter-spacing: 0.2px;
                 color: #FFFFFF;
+                margin-right: 25px;
+                
             }
-            &__free {
+            &__free button{
                 width: 194px;
                 height: 52px;
                 text-align: center;

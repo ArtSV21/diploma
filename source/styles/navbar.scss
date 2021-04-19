@@ -1,5 +1,26 @@
 .navbar {
-    margin: 30px auto;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding: 60px 91px 0 91px !important;
+        &-points {
+            &__point {
+                margin-right: 51px !important;
+                font-size: 18px !important;
+                line-height: 20px !important;
+                letter-spacing: 0.2px !important;
+                color: #20262A !important;
+            }
+        }
+        &-login {
+        button {
+            width: 136px;
+            height: 49px;
+            color: #00B6F0;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            border-radius: 80px;
+            border-color: #00B6F0;
+        
+        }
+     }
 }

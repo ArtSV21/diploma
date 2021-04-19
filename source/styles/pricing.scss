@@ -1,0 +1,78 @@
+.pricing {
+    @include flex-row;
+    justify-content: center;
+    align-items: flex-start;
+    background: #182333;
+        &-description {
+            @include flex-column;
+            width: 31.5%;
+            margin-right: 187px;
+            &__heading {
+                font-weight: bold;
+                font-size: 56px;
+                line-height: 65px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+                padding: 110px 0 26px 0;
+            }
+            &__descr {
+                font-style: normal;
+                font-weight: 450;
+                font-size: 19px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+                // padding-bottom: 205px;
+            }
+        }
+        &-info {
+            @include flex-column;
+            width: 35%;
+                span {
+                    font-size: 18px;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                    color: #FFFFFF;
+                    padding: 110px 0 19px 0;
+                }
+                &__price {
+                    @include flex-row;
+                    
+                    span-Price {
+                        font-weight: bold;
+                        font-size: 72px;
+                        line-height: 78px;
+                        letter-spacing: 0.2px;
+                        color: #F3CD03;
+                    }
+                    span-User {
+                        width: 25%;
+                        font-size: 24px;
+                        line-height: 38px;
+                        letter-spacing: 0.2px;
+                        color: #FFFFFF;
+                    }
+                }
+                span-Calendars {
+                    font-size: 19px;
+                    line-height: 30px;
+                    letter-spacing: 0.2px;
+                    color: #FFFFFF;
+                    padding: 29px 0 20px 0;
+                }
+                &__botton button {
+                    width: 196px;
+                    height: 52px;
+                    left: 0px;
+                    top: 244px;
+                    background: #00B6F0;
+                    border-radius: 85px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    color: #FFFFFF;
+                    margin-bottom: 110px;
+                }
+        }      
+}

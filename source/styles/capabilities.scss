@@ -1,0 +1,44 @@
+.capabilities {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/СapabilitiesSpot.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+        &-info {
+            width: 35%;
+            &__heading {
+                font-style: normal;
+                font-weight: 450;
+                font-size: 36px;
+                line-height: 42px;
+                letter-spacing: 0.1px;
+                color: #20262A;
+                padding-top: 157px;
+                padding-bottom: 27px;
+            }
+            &__descr {
+                font-style: normal;
+                font-weight: 450;
+                font-size: 24px;
+                line-height: 38px;
+                letter-spacing: 0.1px;
+                color: #5C5C5C;
+            }
+            &__link {
+                font-style: normal;
+                font-weight: 450;
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #00B6F0;
+                padding-top: 27px;
+                padding-bottom: 157px;
+            }
+        }
+    &-image {
+        width: 516px;
+        height: 351px;
+        filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+    }
+}

@@ -1,0 +1,38 @@
+.product {
+    margin: 0 auto;
+    @include flex-column;
+    justify-content: center;
+    align-items: center !important;
+        &-heading {
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 65px;
+            letter-spacing: 0.2px;
+            color: #20262A;
+            padding: 72px 0 27px 0;
+        }
+        &-descr {
+            font-style: normal;
+            font-weight: 450;
+            font-size: 19px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: #5C5C5C;
+            padding-bottom: 62px;
+        }
+        &-button button {
+            width: 266px;
+            height: 52px;
+            left: 245.5px;
+            top: 310px;
+            background: #00B6F0;
+            border-radius: 85px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+            margin: 71px 0 62px 0;
+            
+        }
+}
