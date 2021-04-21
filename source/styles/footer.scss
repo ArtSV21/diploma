@@ -2,21 +2,39 @@
     @include flex-row;
     justify-content: space-between;
     align-items: center;
-    // background-color: yellow;
     padding: 0 99px 0 86px !important;
+    @media (max-width: 992px) {
+        @include flex-column;
+        padding-top: 71px !important;
+        align-items: center;
+        
+    }
         &-logo {
             padding: 61px 0 60px 0;
+            &__img img {
+                @media (max-width: 992px) {
+                    text-align: center;
+                }
+            }
             &__info {
                 font-weight: 550;
                 font-size: 18px;
                 line-height: 28px;
                 letter-spacing: 0.1px;
-                color: #5C5C5C;;
+                color: #5C5C5C;
+                @media (max-width: 992px) {
+                    padding-bottom: 10px !important;
+                }
             }
         }
         &-points {
             @include flex-row;
             padding-left: 116px;
+            @media (max-width: 992px) {
+                @include flex-column;
+                align-items: center;
+                margin-bottom: 95px;
+            }
             &__point {
                 font-weight: 650;
                 font-size: 18px;
@@ -24,6 +42,9 @@
                 letter-spacing: 0.2px;
                 color: #20262A;
                 margin-right: 51px;
+                @media (max-width: 992px) {
+                    margin-bottom: 30px;
+                }
                 }
         }
         &-socialmedia {

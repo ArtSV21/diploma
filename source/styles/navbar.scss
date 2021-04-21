@@ -1,26 +1,60 @@
 .navbar {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
     padding: 60px 91px 0 91px !important;
+    @media (max-width: 768px) {
+        padding: 55px 22px 0 34px !important;
+        @include flex-row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 0 auto;
+    }
+    // @media (max-width: 375px) {
+    //     padding: 55px 70px 0 34px !important;
+    // }
+    
         &-points {
+            @include flex-row;
+                justify-content: space-between;
+                align-items: center;
             &__point {
-                margin-right: 51px !important;
-                font-size: 18px !important;
-                line-height: 20px !important;
-                letter-spacing: 0.2px !important;
-                color: #20262A !important;
+                font-weight: 650;
+                margin-right: 51px;
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #20262A;
+                @media (max-width: 1000px) {
+                    margin-right: 15px;
+                }
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
         }
         &-login {
-        button {
-            width: 136px;
-            height: 49px;
-            color: #00B6F0;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 20px;
-            letter-spacing: 0.2px;
-            border-radius: 80px;
-            border-color: #00B6F0;
-        
+            button {
+                width: 136px;
+                height: 49px;
+                color: #00B6F0;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                border-radius: 80px;
+                border-color: #00B6F0;
+            }
         }
-     }
+        &-mobile {
+            display: none;
+        @media (max-width: 768px) {
+            width: 26px;
+            height: 16px;
+            display: block;
+            margin-left: 10px;
+        }
+        }
+    
 }

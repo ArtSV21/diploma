@@ -9,6 +9,9 @@
         letter-spacing: 0.1px;
         color: #F3CD03;
         padding: 72px 0 27px 0;
+        @media (max-width: 768px) {
+            padding: 154px 0 27px 0;
+        }
     }
     &-heading {
         width: 60%;
@@ -18,6 +21,9 @@
         text-align: center;
         letter-spacing: 0.2px;
         color: #20262A;
+        @media (max-width: 768px) {
+            width: 70%;
+        }
     }
     &-descr {
         font-size: 24px;
@@ -27,12 +33,20 @@
         color: #5C5C5C;
         width: 35%;
         padding: 27px 0 69px 0;
+        @media (max-width: 768px) {
+            width: 65%;
+        }
     }
     &-button {
         @include flex-row;
         margin-bottom: 45px;
         margin: 0;
         padding-bottom: 62px;
+        @media (max-width: 563px) {
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+        }
         &__Download button {
             width: 187px;
             height: 52px;
@@ -46,6 +60,11 @@
             letter-spacing: 0.2px;
             color: #FFFFFF;
             margin-right: 14px;
+            @media (max-width: 563px) {
+                width: 317px;
+                height: 55px;
+                margin: 0 0 12px 0;
+            }
             
         }
         &__Walkthrough button {
@@ -62,6 +81,11 @@
             line-height: 20px;
             letter-spacing: 0.2px;
             color: #00B6F0;
+            @media (max-width: 563px) {
+                width: 317px;
+                height: 55px;
+                margin-bottom: 62px;
+            }
 
         }
 

@@ -4,16 +4,25 @@
     align-items: center;
     background-image: url(../img/TestimonialsSpot.png);
     background-size: 100%;
+    background-repeat: no-repeat;
         &-heading {
             font-weight: 450;
             font-size: 36px;
             line-height: 42px;
+            text-align: center;
             letter-spacing: 0.1px;
             color: #20262A;
             padding-top: 169px;
+            @media (max-width: 992px) {
+                padding-top: 111px;
+                width: 70%;
+        }
         }
         &-logo {
             padding: 79px 0 79px 0;
+        @media (max-width: 992px) {
+            padding: 85px 0 85px 0;
+        }
         }
         &-descr {
             font-weight: 450;
@@ -22,13 +31,15 @@
             text-align: center;
             letter-spacing: 0.2px;
             color: #5C5C5C;
+            @media (max-width: 992px) {
+                width: 70%;
+            }
         }
         &-contacts {
             @include flex-row;
             padding: 61px 0 51px 0;
             &__info {
                 @include flex-column;
-                // background-color: green;
             }
             &__info span-Webb {
                 font-size: 18px;
@@ -58,5 +69,8 @@
             letter-spacing: 0.2px;
             color: #FFFFFF;
             margin-bottom: 108px;
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+        }
         }
 }

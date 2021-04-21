@@ -3,10 +3,20 @@
     justify-content: center;
     align-items: flex-start;
     background: #182333;
+    @media (max-width: 992px) {
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+    }
         &-description {
             @include flex-column;
             width: 31.5%;
             margin-right: 187px;
+            @media (max-width: 992px) {
+                margin-right: 0;
+                width: 73%;
+                text-align: center;
+            }
             &__heading {
                 font-weight: bold;
                 font-size: 56px;
@@ -22,57 +32,69 @@
                 line-height: 30px;
                 letter-spacing: 0.2px;
                 color: #FFFFFF;
-                // padding-bottom: 205px;
             }
         }
         &-info {
             @include flex-column;
-            width: 35%;
+            justify-content: center;
+            align-items: flex-start;
+            width: 50%;
+            @media (max-width: 992px) {
+                width: 45%;
+            }
+
+                
                 span {
                     font-size: 18px;
                     line-height: 28px;
                     letter-spacing: 0.1px;
+                    text-align: center;
                     color: #FFFFFF;
                     padding: 110px 0 19px 0;
+                    @media (max-width: 992px) {
+                        // text-align: center;
+                        padding: 70px 0 20px 0;
+                    }
                 }
                 &__price {
-                    @include flex-row;
-                    
-                    span-Price {
+                    // @include flex-row;
+                    span.Price {
                         font-weight: bold;
                         font-size: 72px;
                         line-height: 78px;
                         letter-spacing: 0.2px;
                         color: #F3CD03;
                     }
-                    span-User {
-                        width: 25%;
+                    span.User {
                         font-size: 24px;
                         line-height: 38px;
                         letter-spacing: 0.2px;
                         color: #FFFFFF;
                     }
                 }
-                span-Calendars {
+                span .Calendars {
                     font-size: 19px;
                     line-height: 30px;
                     letter-spacing: 0.2px;
                     color: #FFFFFF;
                     padding: 29px 0 20px 0;
                 }
-                &__botton button {
+                &__botton {
+                    text-align: center;
+                button {
                     width: 196px;
                     height: 52px;
-                    left: 0px;
-                    top: 244px;
                     background: #00B6F0;
                     border-radius: 85px;
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 20px;
+                    text-align: center;
                     letter-spacing: 0.2px;
                     color: #FFFFFF;
                     margin-bottom: 110px;
+                   
                 }
+            }
         }      
 }

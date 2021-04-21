@@ -2,24 +2,42 @@
     @include flex-row;
     justify-content: center;
     align-items: flex-start;
+    @media (max-width: 992px) {
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+    }
+            
         &-direction {
             font-size: 36px;
             line-height: 42px;
             letter-spacing: 0.1px;
             color: #20262A;
             padding: 86px 111px 273px 0;
+            @media (max-width: 992px) {
+                padding: 86px 0 77px 0;
+                width: 55%;
+                text-align: center;
+            }
         }
         &-info {
             width: 34%;
+            @media (max-width: 992px) {
+                text-align: center;
+                width: 90%;
+            }
             &__info {
                 padding: 80px 0 30px 0;
-                span-first {
+                @media (max-width: 992px) {
+                    padding: 0 0 79px 0;
+                }
+                span.first {
                     font-size: 19px;
                     line-height: 30px;
                     letter-spacing: 0.2px;
                     color: #5C5C5C;
                 }
-                span-second {
+                span.second {
                     font-size: 19px;
                     line-height: 30px;
                     letter-spacing: 0.2px;
@@ -27,14 +45,20 @@
                     }
             }
             &__button button {
+                width: 192px;
+                height: 52px;
                 background: #00B6F0;
                 border-radius: 85px;
                 font-weight: bold;
                 font-size: 18px;
+                line-height: 20px;
                 letter-spacing: 0.2px;
                 color: #FFFFFF;
-                padding: 16px 46px 16px 46px;
                 margin-bottom: 70px;
+                @media (max-width: 992px) {
+                    width: 176px;
+                    height: 52px;
+                }
             }
         }
 }
