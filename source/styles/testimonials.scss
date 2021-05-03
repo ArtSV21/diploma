@@ -4,7 +4,9 @@
     align-items: center;
     background-image: url(../img/TestimonialsSpot.png);
     background-size: 100%;
+    background-position-y: -150px;
     background-repeat: no-repeat;
+    margin: 0 auto;
         &-heading {
             font-weight: 450;
             font-size: 36px;
@@ -25,6 +27,7 @@
         }
         }
         &-descr {
+            // width: 30%;
             font-weight: 450;
             font-size: 19px;
             line-height: 30px;

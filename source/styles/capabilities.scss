@@ -7,10 +7,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
         &-info {
-            width: 35%;
+            width: 27%;
+            margin-right: 70px;
             @media (max-width: 992px) {
                 width: 73%;
                 text-align: center;
+                
             }
             &__heading {
                 font-style: normal;
